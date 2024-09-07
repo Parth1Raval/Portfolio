@@ -1,0 +1,127 @@
+/* General Body Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, blue, red); /* Existing gradient background */
+}
+
+/* Hero Section */
+.hero {
+    background: url('your-image-url.jpg') no-repeat center center; /* Replace 'your-image-url.jpg' with a relevant image URL */
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+/* Skills Section Background */
+#skills {
+    background: linear-gradient(to right, blue, red); /* Light blue to light green gradient */
+    padding: 50px 0;
+}
+
+/* Navbar Styles */
+.navbar-custom {
+    background: linear-gradient(to right, blue, red); /* Light blue to light green gradient for navbar */
+    border-bottom: 2px solid #007bff; /* Optional border at the bottom for a distinct separation */
+}
+
+.navbar-custom .nav-link {
+    color: white; /* White color for navbar links */
+    font-weight: 500; /* Medium font weight for better readability */
+    margin: 0 10px; /* Equal horizontal spacing between buttons */
+    padding: 8px 16px; /* Padding inside buttons for a consistent look */
+    border: 2px solid transparent; /* Invisible border by default */
+    border-radius: 5px; /* Rounded corners for buttons */
+    transition: border-color 0.3s, color 0.3s; /* Smooth transition effect for border and color */
+}
+
+.navbar-custom .nav-link:hover,
+.navbar-custom .nav-link:focus {
+    color: #007bff; /* Highlight color on hover or focus */
+    border-color: #0a67f3; /* Border appears on hover */
+    background-color: transparent; /* Ensures the background does not change */
+    text-decoration: none; /* Removes underline */
+}
+
+/* Card Styles */
+.card {
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: none; /* Removing border for a clean look */
+    border-radius: 8px; /* Rounded corners for cards */
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+    background-color: #212529; /* Dark background for footer */
+    color: white; /* White text for better contrast */
+    padding: 20px;
+}
+
+/* Button Styles */
+.btn-outline-primary,
+.btn-outline-dark,
+.btn-outline-danger {
+    border-width: 2px; /* Slightly thicker borders for emphasis */
+}
+
+.btn-outline-primary:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+.btn-outline-dark:hover {
+    background-color: #343a40;
+    color: white;
+}
+
+.btn-outline-danger:hover {
+    background-color: #dc3545;
+    color: white;
+}
+
+/* Typography Enhancements */
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Poppins', sans-serif; /* Use a modern sans-serif font for headings */
+    font-weight: bold;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .card {
+        margin-bottom: 20px;
+    }
+}
+/* Base styles for mobile devices */
+body {
+    font-size: 16px;
+}
+
+/* Styles for tablets */
+@media (min-width: 600px) {
+    body {
+        font-size: 18px;
+    }
+}
+
+/* Styles for desktops and larger screens */
+@media (min-width: 1024px) {
+    body {
+        font-size: 20px;
+    }
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
